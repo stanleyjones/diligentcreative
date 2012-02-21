@@ -1,0 +1,83 @@
+/*	Imports
+-------------------------------------------------------------- */
+
+	@import "reset.css";
+
+
+/*	Standard HTML
+-------------------------------------------------------------- */
+
+	body {font:14px/22px "Helvetica Neue",Helvetica,Arial,sans-serif; color:#eee; background:#432 url(images/body.png) top repeat-x;}
+	h1,h2,h3,h4,h5 {font-weight:bold; margin-bottom:11px;}
+
+	h2 {margin-left:10px; font-size:24px; color:white; font-weight:100; text-transform:lowercase;}
+	h3 {font-size:32px; color:#09f; font-weight:100;}
+	
+	p {margin-bottom:22px;}
+	p:last-child {margin:0;}
+	
+	a {color:#f90; text-decoration:none;}
+	a:hover {color:#fc3;}
+	
+	strong {font-weight:bold;}
+	em {font-style:italic;}
+	
+
+/*	By Section
+-------------------------------------------------------------- */
+
+	#content {margin-top:-225px; padding-top:100px;}
+	.container {position:relative; width:970px; margin:0 auto; overflow:hidden;}
+	.service, .controls button, .testimonial q, #about, #contact {border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px;}
+
+	/* Header */
+
+	#header {height:480px; color:#321; background:url(images/header.jpg) no-repeat; line-height:25px;}
+	#header p {float:right; width:470px; margin:0; padding:10px; color:#ccc; font-size:12px;}
+	
+	#title {float:left; height:80px; width:210px; background:url(images/title.png) no-repeat; text-indent:-9999px;}
+	
+	#navigation {float:right; width:480px; text-transform:lowercase; text-align:right;}
+	#navigation li {display:block; float:left; font-size:18px; margin-right:20px;}
+	
+	#announcement {position:absolute; top:100px; right:10px; width:320px; padding:10px; background:rgba(0,0,0,0.75); border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px; -webkit-transform:rotate(-5deg);}
+	#announcement p {float:none; width:auto; padding:0; color:#fff; line-height:18px;}
+
+	/* Services */
+		
+	#services {float:left; margin-bottom:25px; padding-left:10px;}
+
+	.service {display:block; float:left; width:210px; margin-right:10px; padding:10px; background:#321;}
+	.service:last-child {margin:0;}
+	.service h3 {height:20px; margin-top:-90px; padding-top:90px; background:url(images/services.png) no-repeat;}
+	.service.plan h3 {background-position:right 0;}
+	.service.build h3 {background-position:right -110px;}
+	.service.test h3 {background-position:right -220px;}
+	.service.refine h3 {background-position:right -330px;}
+	
+	/* Clients */
+	
+	#clients {position:relative; margin-bottom:25px; height:320px;}
+	.controls {float:right; margin-top:-35px;}
+	.controls button {margin-right:10px; padding:5px; color:#f90; background:#321; border:0; display:none;}
+	.controls button:hover {color:#fc3; background:#543; cursor:pointer;}
+	
+	.client {position:relative; float:left; height:320px; width:970px; padding:10px 0; overflow:hidden;}
+	.client h3, .client h4 {margin-left:480px;}
+	.client img {float:left; width:390px; margin:-65px 10px 0 0; padding-left:80px; background:url(images/shadow.png) left bottom no-repeat; -webkit-transform:rotate(-3deg) skew(-3deg);}
+	.client .inactive, .client .active {font-size:12px;}
+	.client p.casestudy {float:left; width:240px;}
+	.client p.testimonial {float:left; width:160px; padding-left:60px; color:#69c; font-size:12px;}
+	.client p.testimonial q {display:block; width:100%; padding:10px; background:#321; font-size:18px;}
+	.client p.testimonial cite {display:block; padding:10px; background:url(images/q.png) 10px 0 no-repeat;}
+
+	/* About & Contact */
+		
+	#about, #contact {float:left; width:450px; height:auto; min-height:200px; margin:0 0 25px 10px; padding:10px; font-size:12px; background:#321;}
+	#about h2, #contact h2 {margin-left:0;}
+	#contact img {float:left; margin-right:10px;}
+	
+	/* Footer */
+	
+	#footer {height:50px; background:#210; border-top-left-radius:10px; border-top-right-radius:10px; -moz-border-radius-topleft:10px; -moz-border-radius-topright:10px; -webkit-border-top-left-radius:10px; -webkit-border-top-right-radius:10px;}
+	#footer p {padding:10px; color:#69c; font-size:12px; line-height:12.5px; text-align:right;}

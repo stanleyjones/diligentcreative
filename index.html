@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="Diligent Creative provides web strategy and design for non-profits and socially-responsible business." />
+	<meta name="keywords" content="non-profit web strategy, non-profit web design, mission-driven web strategy, mission-driven web design" />
+	<meta name="verify-v1" content="FPxYGGnKTDWwVvnx4tetiRUmznr9zMTesWO960VSXlU=" />
+	
+	<title>Diligent Creative &ndash; Web strategy and design for non-profits and socially-responsible business</title>
+	
+	<link href="/style/screen.css" rel="stylesheet" type="text/css" media="screen" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+
+		$(document).ready(function() {
+		
+			// Scrolling Navigation
+			
+			$("#navigation a").click(function () {
+				var href = $(this).attr("href");
+				var destination = $(href).offset().top - 50;
+				$("html,body").animate({scrollTop:destination},"slow");
+				return false;
+			});
+			
+			// Sliding Clients
+			
+			var window = $("#clients");
+			var width = $(".client:first").width();
+			var offset = 0;
+			var maxoffset = ($(".client").size() - 1) * width;
+			$("#clients").width(maxoffset+width);
+			
+			buttons();
+			
+			$("button.next").click(function () {
+				offset += width;
+				$(window).animate({left:-offset},"slow");
+				buttons();
+			});
+			
+			$("button.prev").click(function () {
+				offset -= width;
+				$(window).animate({left:-offset},"slow");
+				buttons();
+			});
+			
+			function buttons () {
+				$(".controls button").hide();
+				if (offset > 0)	{ $(".controls button.prev").show(); }
+				if (offset < maxoffset) { $(".controls button.next").show(); }
+			}
+			
+		});
+		/* ]]> */
+	</script>
+</head>
+
+<body>
+	<div id="header" class="container">
+		<h1 id="title">Diligent Creative</h1>
+		<p>We build mission-driven websites.</p>
+		<ul id="navigation">
+			<li><a href="#services">Services</a></li>
+			<li><a href="#clients">Clients</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+
+<!--
+		<div id="announcement">
+			<h3>Diligent is hiring!</h3>
+			<p>Are you a front-end web designer (HTML/CSS/JS) itching to build mission-driven websites for non-profits and socially-responsible businesses? Diligent is hiring contractors and wants to check out your portfolio. See <a href="#contact">contact information</a> below.</p>
+		</div>
+-->
+	</div>
+		
+	<div id="content" class="container">
+
+		<h2>Services</h2>
+		<div id="services">
+			<div class="service plan">
+				<h3>Plan.</h3>
+				<p>Diligent offers strategy consulting, brainstorming facilitation, and project management to bring your site (and you) to the cutting edge.</p>
+			</div>
+			<div class="service build">
+				<h3>Build.</h3>
+				<p>A full-service creative agency, Diligent handles concepts to coding, whether it's handwritten HTML or a custom theme for your existing platform.</p>
+			</div>
+			<div class="service test">
+				<h3>Test.</h3>
+				<p>Diligent offers a wide range of diagnostics, from quantitative traffic analysis to qualitative user testing, and helps you translate them into concrete actions.</p>
+			</div>
+			<div class="service refine">
+				<h3>Refine.</h3>
+				<p>Unlike most agencies, Diligent stays with you to improve your website over time. Seize opportunities as they arise, not in the next major redesign.</p>
+			</div>
+		</div>
+
+		<h2>Clients</h2>
+		<p class="controls"><button class="prev">Prev</button><button class="next">Next</button></p>
+		<div id="clients">
+			<div class="client">
+				<h3>Oil Change International</h3>
+				<h4>ShiftTheSubsidies.org <a href="http://shiftthesubsidies.org/" class="active">visit site</a></h4>
+				<img src="/images/shiftthesubsidies.org.jpg" height="300" width="400" alt="Screenshot of ShiftTheSubsidies.org" />
+				<p class="casestudy">Over $40B of public money goes to prop up the fossil fuel industry around the world. Diligent partnered with Oil Change International to imagine and create a site full of interactive data visualizations that pull back the curtain.</p>
+				<p class="testimonial"><q>A really stunning tool.</q><cite>Steve Kretzmann, Executive Director</cite></p>
+			</div>
+			<div class="client">
+				<h3>MYOO</h3>
+				<h4>MYOO.com <a href="http://myoo.com/" class="active">visit site</a></h4>
+				<img src="/images/myoo.com.jpg" height="300" width="400" alt="Screenshot of MYOO.com" />
+				<p class="casestudy">When Adventure Ecology (of <a href="http://theplastiki.com/">Plastiki</a> fame) decided to rebrand as MYOO, Diligent was called upon to build a site where all of their adventures could live under one roof, along with feature-length articles, crowd-sourced challenges, video galleries, and more. Visual design handled in-house.</p>
+				<p class="testimonial"><q>[Launching this site] has been a four-year dream. You made it rock! Thank you!</q><cite>David de Rothschild</cite></p>
+			</div>
+			<div class="client">
+				<h3>Oil Change International</h3>
+				<h4>DirtyEnergyMoney.com <a href="http://dirtyenergymoney.com/" class="active">visit site</a></h4>
+				<img src="/images/dirtyenergymoney.com-internal.jpg" height="300" width="400" alt="Screenshot of DirtyEnergyMoney.com" />
+				<p class="casestudy">Are your senators are under the thumb of big oil? Oil Change International built Dirty Energy Money to make their campaign contributions visible. Developed by <a href="http://greg.primate.net">Greg Michalec</a> and <a href="http://skyeome.net/wordpress/">Skye Bender-deMoll</a>, Diligent Creative redesigned the user interface to make sleuthing on your elected officials fun.</p>
+				<p class="testimonial"><q>Public data usually hides in plain sight&mdash;and has only become easy to read for regular citizens thanks to the power of infographics.</q><cite><a href="http://www.fastcodesign.com/1662176/infographic-politicians-funded-by-dirty-energy" title="Infographic: Politicians Funded by Dirty Energy">Fast Company</a></cite></p>
+			</div>
+			<div class="client">
+				<h3>Breast Cancer Fund</h3>
+				<h4>BreastCancerFund.org <a href="http://breastcancerfund.org/" class="active">visit site</a></h4>
+				<img src="/images/breastcancerfund.org.jpg" height="300" width="400" alt="Screenshot of BreastCancerFund.org" />
+				<p class="casestudy">Diligent helped the Breast Cancer Fund audit their existing website with traffic analysis and one-on-one usability testing, then fostered the creation of a comprehensive online strategy with a series of strategy sessions. Finally, the visual redesign was handled by <a href="http://freerangestudios.com/">Free Range Studios</a>.</p>
+				<p class="testimonial"><q>Short recap of our time without Diligent: hell.</q><cite>Shannon Coughlin<br />Director of Communications</cite></p>
+			</div>
+			<div class="client">
+				<h3>Swap for Good</h3>
+				<h4>SwapForGood.org <a href="http://swapforgood.org/" class="active">visit site</a></h4>
+				<img src="/images/swapforgood.org.jpg" height="300" width="400" alt="Screenshot of SwapForGood.org" />
+				<p class="casestudy">Get a new wardrobe and raise money for a critical cause. Swap for Good is a grassroots project to host clothing swaps and collect admission for local domestic violence shelters. Diligent provided visual design and identity, then connected the WordPress site to <a href="http://www.radicaldesigns.org/">Radical Designs</a>' rEvent application.</p>
+				<p class="testimonial"><q>Why not use the environmental principle of recycling to raise money for another passionate cause?</q><cite><a href="http://green.blogs.nytimes.com/2010/04/23/swapping-old-duds-for-a-good-cause/" title="Swapping Old Duds for a Good Cause">NY Times</a></cite></p>
+			</div>
+			<div class="client">
+				<h3>Project Survival Media</h3>
+				<h4>ProjectSurvivalMedia.org <a href="http://projectsurvivalmedia.org/" class="active">visit site</a></h4>
+				<img src="/images/projectsurvivalmedia.org.jpg" height="300" width="400" alt="Screenshot of ProjectSurvivalMedia.org" />
+				<p class="casestudy">Youth journalists reporting on the climate crisis, Project Survival Media turned to Diligent for a site design that captured the urgency of the political and ecological situation while remaining professional and easy-to-use. The result is a vault of captivating photos, video, and audio from all seven continents.</p>
+				<p class="testimonial"><q>Totally amazing and highly recommended. Stanley is charming, skilled, and brilliant.</q><cite>Shadia Fayne Wood<br />Central Coordinator</cite></p>
+			</div>
+			<div class="client">
+				<h3>National Wildlife Federation</h3>
+				<h4>FairClimateProject.org <a href="http://fairclimateproject.org/" class="active">visit site</a></h4>
+				<img src="/images/fairclimateproject.org.jpg" height="300" width="400" alt="Screenshot of FairClimateProject.org" />
+				<p class="casestudy">National Wildlife Federation's Fair Climate Project empowers environmental leaders working in under-served communities. In addition to providing the site's visual design, Diligent built a photo contest where applicants could submit entries simply by tagging photos in their own social networks.</p>
+				<p class="testimonial"><q>Very well done. The photo section is wonderful.</q><cite>Paul Baudette<br />NWF Board Member</cite></p>
+			</div>
+			<div class="client">
+				<h3>Rainforest Action Network</h3>
+				<h4>RAN.org <a href="http://ran.org/" class="active">visit site</a></h4>
+				<img src="/images/ran.org.jpg" height="300" width="400" alt="Screenshot of RAN.org" />
+				<p class="casestudy">Rainforest Action Network had great traffic but discovered visitors weren't engaging their content. Diligent led the way from the first brainstorms to the final build, resulting in dramatic improvement on bounce rate, return visits, and donor conversion.</p>
+				<p class="testimonial"><q>Audaciously quantifying.</q><cite>Luke Smith<br />Web Developer/Designer</cite></p>
+			</div>
+
+		</div>
+		
+		<div id="about">
+			<h2>About</h2>
+			<p>Diligent Creative works exclusively with non-profits and socially-responsible businesses to harness the dynamic and democratic power of the Internet for social change.</p>
+			<p>Diligent's founder, Stanley Jones, has been designing, developing, and <a href="http://sunshocked.com/stanifesto/archives/diligence/">improving</a> mission-driven websites for over a decade.</p>
+		</div>
+		
+		<div id="contact">
+			<h2>Contact</h2>
+			<!--<img src="/images/headshot.jpg" height="150" width="150" alt="Illustration of Stanley Jones" />-->
+			<p>
+				<strong>Diligent Creative</strong><br />
+				(415) 283-5733<br />
+				info at diligentcreative dot com
+			</p>
+			<p>
+				<a href="http://maps.google.com/maps?q=901+Mission+Street,+San+Francisco,+CA&z=16">901 Mission Street, Suite 105</a><br />
+				San Francisco, CA 94104</p>
+		</div>
+	</div>
+	
+	<div id="footer" class="container">
+		<p>&copy; Diligent Creative. All rights reserved.<br/>
+		<a href="http://www.flickr.com/photos/fhsu/457783274/">River through Grand Canyon</a> (cc) Fred Hsu.</p>
+	</div>
+	
+	<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+	<script type="text/javascript">try { var pageTracker = _gat._getTracker("UA-5901476-1"); pageTracker._trackPageview(); } catch(err) {}</script>
+</body>
+
+</html>
